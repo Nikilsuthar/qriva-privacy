@@ -53,3 +53,4 @@ th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--lin
 .dl p { color: var(--muted); margin: 6px 0; }
 .dl ol { color: var(--muted); padding-left: 20px; }
 .fine { font-size: 13px; overflow-wrap: anywhere; }
+nav a + a { margin-left: 16px; }
