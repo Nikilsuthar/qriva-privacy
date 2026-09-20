@@ -1,0 +1,39 @@
+:root {
+  --bg: #f4f5fb; --surface: #ffffff; --text: #141428; --muted: #5b5f7a;
+  --primary: #4f46e5; --primary-2: #7c3aed; --line: #e3e5f2;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0d1020; --surface: #171a33; --text: #eef0ff; --muted: #a3a8c8; --primary: #8b85ff; --line: #2a2e52; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+a { color: var(--primary); }
+.top { background: var(--surface); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; color: var(--text); text-decoration: none; }
+.logo { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; color: #fff; font-size: 13px; font-weight: 800;
+  background: linear-gradient(135deg, var(--primary), var(--primary-2)); }
+nav a { text-decoration: none; font-weight: 600; }
+.hero { color: #fff; text-align: center; padding: 64px 0 72px;
+  background: linear-gradient(135deg, #4338ca, #7c3aed); border-radius: 0 0 36px 36px; }
+.hero h1 { margin: 0 0 8px; font-size: clamp(28px, 6vw, 44px); line-height: 1.15; }
+.hero p { margin: 0; opacity: .9; }
+.cta { margin-top: 22px !important; }
+.pill { display: inline-block; background: rgba(255,255,255,.18); border: 1px solid rgba(255,255,255,.35); padding: 8px 18px; border-radius: 999px; font-weight: 600; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); margin: 32px 0; }
+article, .note { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px; }
+article h3 { margin: 0 0 6px; }
+article p, .note p { margin: 0; color: var(--muted); }
+.note { margin: 0 0 16px; } .note h2 { margin: 0 0 6px; font-size: 20px; }
+.doc { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; margin-top: 28px; margin-bottom: 28px; padding: 28px 24px; }
+.doc h1 { margin-top: 0; }
+.doc h2 { margin: 30px 0 8px; font-size: 20px; }
+.doc .meta { color: var(--muted); }
+.doc li { margin: 6px 0; }
+code { background: var(--bg); padding: 1px 6px; border-radius: 6px; font-size: .9em; }
+table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.foot { color: var(--muted); font-size: 14px; padding: 18px 0 36px; }
