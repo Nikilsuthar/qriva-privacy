@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>QRiva - Scan, create and print QR codes</title>
-<meta name="description" content="QRiva is a fast, private QR code scanner, creator and label printer for Android. Works offline.">
+<meta name="description" content="QRiva is a fast, private QR code scanner, creator and label printer for Android. Works offline. Download from Google Play or as an APK.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
   <div class="wrap">
     <a class="brand" href="index.html"><span class="logo">QR</span> QRiva</a>
-    <nav><a href="privacy-policy.html">Privacy Policy</a></nav>
+    <nav><a href="#download">Download</a> <a href="privacy-policy.html">Privacy Policy</a></nav>
   </div>
 </header>
 
@@ -19,16 +19,48 @@
   <div class="wrap">
     <h1>Scan, create &amp; print QR codes</h1>
     <p>Fast, private and works offline. No account needed.</p>
-    <p class="cta"><span class="pill">Android app</span></p>
+    <p class="cta">
+      <!-- GOOGLE PLAY BUTTON: after the app is live, remove the "disabled" class and
+           the aria-disabled attribute, and keep the href below. -->
+      <a class="btn play disabled" aria-disabled="true"
+         href="https://play.google.com/store/apps/details?id=com.nikhilsuthar.qriva">
+        <span class="small">Coming soon on</span><span class="big">Google Play</span>
+      </a>
+      <a class="btn apk" href="https://github.com/Nikilsuthar/qriva-privacy/releases/latest/download/QRiva.apk">
+        <span class="small">Direct download</span><span class="big">APK (Android)</span>
+      </a>
+    </p>
   </div>
 </section>
 
 <main class="wrap">
   <section class="grid">
     <article><h3>Scan</h3><p>Scan with the camera or from a gallery image, with safe, explicit actions for links, Wi-Fi, contacts and more.</p></article>
-    <article><h3>Create</h3><p>17 QR types including Website, WhatsApp, Instagram, Facebook, Telegram, Wi-Fi, Contact and Location with address.</p></article>
+    <article><h3>Create</h3><p>Up to 17 QR types including Website, WhatsApp, Instagram, Facebook, Telegram, Wi-Fi, Contact and Location with address.</p></article>
     <article><h3>Design</h3><p>Colours, shapes, frames, your logo, ready-made icons or centre text - with built-in scan-safety checks.</p></article>
     <article><h3>Print</h3><p>8 ready-made label templates. Print on any printer Android supports, or save as PDF.</p></article>
+  </section>
+
+  <section class="note" id="download">
+    <h2>Download QRiva</h2>
+    <div class="dl">
+      <div>
+        <h3>Google Play (recommended)</h3>
+        <p>Automatic updates and Google Play protection. The Play listing is coming soon - the button above will switch on when it is live.</p>
+      </div>
+      <div>
+        <h3>Direct download (APK)</h3>
+        <p>Version 1.2.1 &middot; about 52 MB &middot; Android 6.0 or newer.</p>
+        <p><a class="btn apk small-btn" href="https://github.com/Nikilsuthar/qriva-privacy/releases/latest/download/QRiva.apk">Download QRiva.apk</a></p>
+        <ol>
+          <li>Open the downloaded file. If Android asks, allow <em>Install unknown apps</em> for your browser or file manager.</li>
+          <li>Tap <em>Install</em>. You can turn the setting off again afterwards.</li>
+        </ol>
+        <p class="fine">SHA-256 checksum: <code>f0d286014ddcf89519fae5b3359a64f4b9e2cf7db863d7a511b117331692a694</code><br>
+        The APK is signed by the developer. Apps installed from the APK do not update automatically, and cannot be updated
+        by the Google Play version (uninstall first, then install from Play). Only download from this page.</p>
+      </div>
+    </div>
   </section>
 
   <section class="note">
@@ -43,6 +75,6 @@
   </section>
 </main>
 
-<footer class="foot"><div class="wrap">&copy; 2026 Nikhil D Suthar &middot; QRiva is independent and not affiliated with WhatsApp, Instagram, Facebook, Snapchat, X, YouTube, TikTok, LinkedIn, Telegram or Google.</div></footer>
+<footer class="foot"><div class="wrap">&copy; 2026 Nikhil D Suthar &middot; <a href="privacy-policy.html">Privacy Policy</a><br>QRiva is independent and not affiliated with WhatsApp, Instagram, Facebook, Snapchat, X, YouTube, TikTok, LinkedIn, Telegram or Google. Google Play is a trademark of Google LLC.</div></footer>
 </body>
 </html>
